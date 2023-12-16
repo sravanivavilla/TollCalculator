@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Toll Calculator
+    </title>
+    <link rel="stylesheet" href="tollCalculatorStyle.css">
+  </head>
+  <body>
+    <div>
+      <label for="vehicleType">Vehicle Type:</label>
+      <select id="vehicleType">
+        <option value="car">CAR</option>
+         <option value="bus">BUS</option>
+        <option value="Truck">TRUCK</option>
+      </select>
+    </div>
+    
+    <div>
+       <label for="distance">Distance in kilometers:</label>
+      <input type="number" id="distance" />
+    </div>
+    <div>
+      <button onclick=calculateToll()">Calculate Toll</button>
+    </div>
+    <div id="result"></div>
+    <script src="tollCalculatorScript.js"></script>
+  </body>
+</html>
